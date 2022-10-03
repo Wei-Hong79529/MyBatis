@@ -8,15 +8,28 @@ public class User {
     private Integer sex;
     private String email;
 
-    public User(Integer id, String name, String password, Integer age, Integer sex, String email) {
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    private Address address;
+
+    public User(Integer id, String name, String password, Integer age, Integer sex, String email,Address address) {
         this.id = id;
         this.userName = name;
         this.password = password;
         this.age = age;
         this.sex = sex;
         this.email = email;
+        this.address=address;
     }
+    public User(){
 
+    }
     public Integer getId() {
         return id;
     }
@@ -69,11 +82,25 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + userName + '\'' +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
                 ", sex=" + sex +
                 ", email='" + email + '\'' +
+                ", address=" + address +
                 '}';
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        User user=new User();
+        user.setId(this.id);
+        user.setUserName(this.userName);
+        user.setPassword(this.getPassword());
+        user.setAge(this.age);
+        user.setSex(this.sex);
+        user.setEmail(this.email);
+        user.setAddress(this.address);
+        return user;
     }
 }

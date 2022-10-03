@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- package  + interface class name-->
-<mapper namespace="com.Jack.MyBatis.mapper.UserMapper">
+<mapper namespace="com.Jack.MyBatis.Pojo.mapper.UserMapper">
     <!-- int insertUser();-->
     <insert id="insertUser">
         insert into user values(null,"admin",'123456',10,'男','example@gmaile.com')

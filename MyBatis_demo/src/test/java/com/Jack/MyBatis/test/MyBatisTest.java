@@ -1,6 +1,6 @@
 package com.Jack.MyBatis.test;
 
-import com.Jack.MyBatis.mapper.UserMapper;
+import com.Jack.MyBatis.Pojo.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
