@@ -1,2 +1,3 @@
-com\Jack\MyBatis\mapper\UserMapper.class
+com\Jack\MyBatis\Pojo\PosRole.class
+com\Jack\MyBatis\Pojo\mapper\UserMapper.class
 com\Jack\MyBatis\Pojo\User.class
